@@ -10,7 +10,7 @@ if(isset($_POST['score']) && isset($_POST['user']))
 		$score=$_POST['score'];
 	$n=" ".strtolower($n);
 	$file=fopen("girlfriend.txt","w") or die("Error opening database!");
-	if(strpos($n,'gopi') || strpos($n,'lund') || strpos($n,'baap') || strpos($n,'chod') || strpos($n,'sex') || strpos($n,'chut') || strpos($n,'maa')  || strpos($n,'*') || strpos($n,'fuck') || strpos($n,'behen') || strpos($n,'chud'))
+	if(strpos($n,'gopi'))  //check for slangs
 	{
 		$n="Guest";
 		$str=$n."*****".$score."*****".$ip;
